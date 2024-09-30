@@ -1,0 +1,210 @@
+/* css for login form */
+.login-cont {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../media/space.gif);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+body {
+    margin: 0;
+}
+.login-box {
+    background-color: rgba(255,255,255,0.03);
+    border-radius: 10px;
+    padding: 45px;
+    width: 375px;
+    max-width: 95%;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 480px) {
+    .login-box {
+        padding: 75px 25px;
+    }
+}
+.login-box h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 45px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.login-box form div {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #B2A4FF;
+}
+.login-box form div:hover {
+    border-bottom-color: #D4ADFC;
+}
+.login-box form div:first-of-type {
+    margin-bottom: 35px;
+}
+.login-box form div i {
+    font-size: 15px;
+    padding: 0px 10px;
+    color: white;
+}
+.login-box div:hover i {
+    color: #B2A4FF;
+}
+.login-box label {
+    color: white;
+    line-height: 1.5;
+}
+.login-box div input {
+    font-size: 12px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    min-width: 0;
+    flex: 1;
+    background: whitesmoke;
+}
+form input::placeholder {
+    opacity: 1;
+    color: gray;
+    font-size: 12px;
+}
+.login-box a {
+    color: #B2A4FF;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+.login-box a:hover {
+    color: whitesmoke;
+}
+.login-box form .forget {
+    margin-top: 15px;
+    float: right;
+}
+.login-box form input[type="submit"] {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #B2A4FF;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    margin-top: 45px;
+    border-radius: 250px;
+}
+.login-box form input[type="submit"]:hover {
+    background-color: #D4ADFC;
+    cursor: pointer;
+}
+.login-box .signup {
+    font-size: 14px;
+    margin-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* css for signup */
+body {
+    margin: 0;
+}
+.signup-cont {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../media/astronaunt.gif);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.signup-box {
+    background-color: rgba(255,255,255,0.03);
+    border-radius: 10px;
+    padding: 45px;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
+    line-height: 1;
+}
+.signup-box h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+}
+.signup-box form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0 10px 0;
+}
+.signup-box form .user-details .input-box {
+    width: calc(100% / 2 - 50px);
+    margin-bottom: 20px;
+    padding: 0px 10px;
+}
+/* .user-details .input-box label,
+.user-details .address label,
+.user-details .gender */
+label { 
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+    line-height: 1.5;
+}
+.input-box input,
+.role {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+.role {
+    width: 107%;
+}
+/* .signup-box  */
+form input::placeholder, .role::placeholder {
+    opacity: 1;
+    color: gray;
+    font-size: 12px;
+}
+.signup-box input:hover, .signup-box input:focus {
+    border-bottom-color: #D4ADFC;
+}
+.user-details .gender {
+    margin-right: 430px;
+}
+.user-details .gender .category {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px; 
+} 
+
+.signup-box form input[type="submit"] {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #B2A4FF;
+    color: white;
+    border: none;
+    width: 90%;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 250px;
+}
+.signup-box form input[type="submit"]:hover {
+    background-color: #D4ADFC;
+    cursor: pointer;
+}
+#message1, #message2 {
+    font-size: 13px;
+}

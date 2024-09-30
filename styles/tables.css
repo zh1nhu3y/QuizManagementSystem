@@ -1,0 +1,56 @@
+/* css for admin panel table */
+.container1 td {
+    font-weight: normal;
+    font-size: 1em;
+    text-align: center;
+  -webkit-box-shadow: 0 2px 2px -2px #896B60;
+      -moz-box-shadow: 0 2px 2px -2px #896B60;
+          box-shadow: 0 2px 2px -2px #896B60;
+}
+
+.container1 {
+  text-align: left;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  display: table;
+  /* padding: 10 10 8em 10; */
+}
+
+.container1 td, .container1 th {
+  padding: 1% 10px;
+} 
+
+.container1 td {
+  background-color: #E8DDCD;
+}
+/* Background-color of the odd rows */
+/* .container1 tr:nth-child(odd) {
+    background-color: #E8DDCD;
+} */
+
+/* Background-color of the even rows */
+/* .container1 tr:nth-child(even) {
+    background-color: #E8DDCD;
+} */
+
+.container1 th {
+  background-color: #b8978b;
+  text-align: center;
+  }
+.container a {
+  text-decoration: none;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  -o-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+

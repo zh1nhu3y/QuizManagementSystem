@@ -1,0 +1,160 @@
+/* Main flashcard and quiz page */
+/* title */
+.title {
+    font-size: 60px;
+    color: #DAEAF1;
+    text-align: center;
+}
+/* search */
+.search-bg input {
+    border: none;
+    height: 100%;
+    width: 80%;
+    padding: 0px 20px 0px 60px;
+    border: 50px;
+    font-size: 18px;
+    color: white;
+    background: none;
+}
+.search-bg input:focus {
+    outline: none;
+}
+.search-bg {
+    margin: auto;
+    position: relative;
+    width: 700px;
+    height: 60px;
+    border: 4px solid #9DB2BF;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+.search-icon i {
+    position: absolute;
+    top: 272px;
+    left: 435px;
+    font-size: 28px;
+    color: #9DB2BF;
+}
+.subjects {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.subjects a{
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    margin: 0 29px 0 7px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.subjects i {
+    margin-top: 15px;
+    font-size: 25px;
+}
+.subjects a:hover {
+    background-color: white;
+    color: #7A3E3E;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    transform: scale(1.1);
+}
+.subjects-title {
+    width: 100%;
+    text-align: center;
+}
+.subjects-title ul {
+    margin-right: 20px;
+}
+.subjects-title ul li {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin: 0px 28px 0px 0;
+}
+.bm, .malay h2{
+    background-color: #DB005B;
+}
+.eng, .english h2{
+    background-color: #47A992;
+}
+.mt, .maths h2{
+    background-color: #F97B22;
+}
+.sc, .science h2{
+    background-color: #F7D060;
+}
+.sej, .history h2{
+    background-color: #62CDFF;
+}
+.puresc, .pure-science h2 {
+    background-color: #BFACE2;
+}
+.list {
+    color: white;
+}
+.list {
+    box-sizing: border-box;
+    padding: 10px 0px;
+    width: 50%
+}
+.list h1 {
+    margin-left: 70px;
+}
+.row-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.row-1 h2 {
+    width: 300px;
+    height: 210px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease;
+}
+.row-1 i {
+    font-size: 100px;
+    margin-top: 20px;
+    margin-left: 100px;
+    color: white;
+    transition: all 0.3s ease;
+}
+.list .quiz-info {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    margin-top: -118px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    color: #373737; 
+    transition: all 0.3s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.list a {
+    text-decoration: none;
+}
+.list a:hover i {
+    transform: scale(1.15);
+    transition: all 0.3s ease;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+.list .info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+}

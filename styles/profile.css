@@ -1,0 +1,91 @@
+.prof-cont {
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../media/bg.jpg);
+    height: 160vh;
+    /* display: grid; */
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}  
+.prof-box {
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px 40px;
+    /* margin: 40px 0; */
+    width: 50%;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
+    line-height: 1;
+}
+.prof-box h3 {
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin: 30px 0;
+    width: 100%;
+}
+.prof-box .user-details {
+    padding-bottom: 30px;
+    margin: 20px 0 10px 0;
+}
+.prof-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.prof-box .input-box { 
+    width: calc(100% / 2 - 60px);
+    margin-bottom: 20px;
+    padding: 0px 10px;
+}
+.input-box label{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+} 
+.input-box input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+} 
+form input::placeholder {
+    opacity: 1;
+    color: gray;
+    font-size: 12px;
+} 
+.prof-box input:hover, .prof-box input:focus{
+    border-bottom-color: #19A7CE;
+}
+.box1 {
+    width: calc(100% - 500px);
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    margin: auto;
+} 
+.prof-box .submit, .prof-box .change {  
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #8294C4;
+    color: white;
+    border: none;
+    width: 200px;
+    padding: 15px;
+    margin-top: 45px;
+    border-radius: 250px; 
+    display: block;
+    margin: auto; 
+}
+.prof-box .submit:hover {
+    background-color: #AFD3E2;
+    cursor: pointer;
+}
+#message1, #message2 {
+    font-size: 13px;
+}
+.prof-box form input[type="email"] {
+    font-style: italic;
+}

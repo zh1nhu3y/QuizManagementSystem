@@ -1,0 +1,358 @@
+/* flashcard page 1 */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: black;
+}
+.create-flashcard {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.create-flashcard h1 {
+    margin: 20px 0 50px 0;
+    font-size: 40px;
+    color: #FD841F;
+}
+.radio-buttons {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.custom-radio input {
+    display: none;
+}
+.radio-btn {
+    margin: 18px 23px;
+    width: 150px;
+    height: 150px;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+}
+.radio-btn .subject-icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-btn .subject-icon i {
+    /* color: #fff; */
+    line-height: 80px;
+    font-size: 40px;
+}
+
+.radio-btn .subject-icon h3 {
+    /* color: #fff; */
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.custom-radio input:checked + .radio-btn {
+    border: 3px solid #fff;
+}
+label {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 100px;
+}
+.bm{
+  background-color: #DB005B;
+}
+.eng{
+    background-color: #47A992;
+}
+.mt{
+    background-color: #F97B22;
+}
+.sc{
+    background-color: #F7D060;
+}
+.history{
+    background-color: #62CDFF;
+}
+.puresc{
+    background-color: #BFACE2;
+}
+.create-flashcard textarea {
+  width: 570px;
+  height: 38px;
+  font-size: 16px;
+  border-radius: 35px;
+  padding: 10px 20px;
+  margin: 30px 0 50px 0;
+  border: 3px solid whitesmoke;
+  resize: none;
+  outline: none;
+}
+.create-flashcard textarea:focus {
+  border-color: #E8A9A9;
+}
+.next {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: none;
+  border: 3px solid #E8A9A9;
+  color: white;
+  /* border: none; */
+  width: 200px;
+  padding: 15px;
+  margin: 30px 0 50px 0;
+  border-radius: 250px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.next:hover {
+  background-color: #F3BCC8;
+}
+
+/* flashcard page 2 */
+body {
+    background-color: black;
+}
+.header {
+    color: white;
+    padding: 40px 0 0 0;
+    line-height: 1.7;
+}
+.container, .header {
+    width: 90vw;
+    max-width: 62.5em;
+    position: relative;
+    margin: auto;
+}
+.add-flashcard-con {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.2em 1em;
+}
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.add-flashcard-con button {
+    font-size: 1em;
+    background-color: #E57C23;
+    padding: 0.8em 1.2em;
+    font-weight: 600;
+    color: white;
+    border-radius: 0.4em;
+    margin-left: 40px;
+}
+#card-container {
+    border: 1px solid white;
+    margin-top: 1em;
+}
+.question-container {
+    box-sizing: border-box;
+    width: 89vw;
+    max-width: 33em;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #454545;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em 3em;
+    border-radius: 0.6em;
+    box-shadow: 0 1em 2em rgba(255, 255, 255, 0.1);
+}
+.question-container h2{
+    margin-top: 20px;
+    font-size: 2.2em;
+    color: #FFD966;
+    font-size: 600;
+    text-align: center;
+    margin-bottom: 1.7em;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.error-con {
+    align-self: center;
+}
+#error {
+    color: red;
+    font-weight: 400;
+}
+.fa-xmark {
+    font-size: 1.4em;
+    background-color: #FD841F;
+    height: 1.8em;
+    width: 1.8em;
+    display: grid;
+    place-items: center;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-self: flex-end;
+}
+label {
+    color: whitesmoke;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+}
+textarea {
+    width: 97%;
+    padding: 0.7em 0.5em;
+    border: 1px solid whitesmoke;
+    outline: none;
+    border-radius: 0.3em;
+    resize: none;
+}
+textarea:not(:last-child) {
+    margin-bottom: 1.2em;
+}
+textarea:focus {
+    border-color: #E14D2A;
+}
+#save-btn {
+    font-size: 1em;
+    background-color: #FD841F;
+    color: white;
+    padding: 0.6em 0;
+    border-radius: 250px;
+    font-weight: 600;
+    border: none;
+}
+#save-btn:hover {
+    cursor: pointer;
+    background: #E8AA42;
+}
+.hide {
+    display: none;
+}
+.card-list-container {
+    margin: 0 auto;
+    display: grid;
+    padding: 0.2em;
+    gap: 1.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+    background: #F9FBE7;
+    box-shadow: 0 0.4em 1.2em rgba(255, 255, 255, 0.1);
+    padding: 1.5em 1.7em;
+    border-radius: 0.4em;
+}
+.question-div, .answer-div {
+    text-align: center;
+    color: black;
+}
+.question-div {
+    margin-bottom: 0.8em;
+    font-weight: 500;
+}
+.answer-div {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-weight: 400;
+}
+.show-hide-btn {
+    display: block;
+    background-color: #FF7B54;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.6em 0;
+    border-radius: 0.3em;
+}
+.buttons-con {
+    display: flex;
+    justify-content: flex-end;
+}
+.edit, .delete {
+    background: transparent;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: none;
+    text-decoration: none;
+}
+.edit {
+    color: #537188; 
+}
+.delete {
+    color: red;
+}
+.wrapper a {
+    text-decoration: none;
+}
+
+/* My Flashcard page */
+.flashcard-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.flashcard-container h1 {
+    margin: 50px 0 50px 0;
+    font-size: 40px;
+    color: #FD841F;
+}
+.flashcard {
+    display: flex;
+    margin: 0px 30px 20px 30px;
+    box-sizing: border-box;
+    align-items: normal;
+    justify-content:space-between;
+    width: 750px;
+    height: 90px;
+    background-color: white;
+    border-left: 8px solid #F7C04A;
+    padding: 12.5px 35px;
+    transition: all 0.3s ease;
+}
+.actions a {
+    text-decoration: none;
+}
+.actions i {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+.actions .edit-link i{
+    color: #8696FE;
+}
+.actions .delete-link i{
+    color: #E76161;
+}
+.details {
+    text-align: left;
+}
+.details h2 {
+    margin-bottom: 7px;
+    color: #454545;
+}
+.details h4 {
+    color: grey;
+}
+.flashcard:hover {
+    border-color: #FF6000;
+    background: #FFFAF4;
+}
+.actions i:hover {
+    color: #ACB1D6;
+}

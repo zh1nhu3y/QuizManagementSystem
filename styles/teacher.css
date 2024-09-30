@@ -1,0 +1,168 @@
+/* css for teacher nav bar */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    background: black;
+}
+.side-bar {
+    background: white;
+    width: 250px;
+    left: -250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+    z-index: 1;
+}
+.side-bar header {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+}
+header img {
+    width: 100px;
+    margin: 15px;
+    margin-left: 70px;
+}
+.close-btn {
+    position: absolute;
+    color: black;
+    font-size: 23px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+header h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    padding-bottom: 13px;
+    letter-spacing: 2px;
+}
+.menu {
+    width: 100%;
+    margin-top: 30px;
+}
+.menu .item {
+    position: relative;
+    cursor: pointer;
+}
+.menu .item a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 50px;
+}
+.menu .item a:hover {
+    background: #D7C0AE;
+}
+.item i {
+    margin-right: 15px;
+}
+.item a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+.item .sub-menu {
+    background: whitesmoke;
+    display: none;
+}
+.menu-btn {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    cursor: pointer;
+    margin: 25px;
+    z-index: 1;
+}
+.side-bar.active {
+    left: 0;
+}
+.side-bar::-webkit-scrollbar {
+    width: 0px;
+}
+.item .sub-menu a{
+    padding-left: 60px;
+}
+.rotate {
+    transform: rotate(90deg);
+}
+.main {
+    height: 300px;
+}
+.main img{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* teacher home */
+.teacher-cont {
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../media/bg.jpg);
+    height: 100vh; 
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* z-index: -1; */
+} 
+.teacher-home {
+    width:  100%;
+    position: absolute;
+    top: 50%;
+    transform : translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.teacher-home h1 {
+    font-size: 70px;
+    color: #AEE2FF;
+}
+.teacher-home h4 {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.teacher-home button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #99DBF5;
+    background: transparent;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.teacher-home span {
+    background: #99DBF5;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    z-index: -1;
+    transition: 0.5s;
+}
+.teacher-home button:hover span {
+    width: 100%;
+}
+.teacher-home button:hover {
+    border: none;
+}

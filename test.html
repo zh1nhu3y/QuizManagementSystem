@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/createFlashacrd.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><span style="color: #FD841F; margin-right:10px;">Flashcard Title:</span> <?php echo $title?></h1>
+            <h2><span style="color: #E8AA42; margin-right:10px;">Subject:</span> <?php echo $subject?></h2>
+        </div>
+        <div class="add-flashcard-con">
+            <button id="add-flashcard">Add Flashcard</button>
+            <button onclick="window.location.href='';">Save</button>
+        </div>
+        <div id="card-con">
+            <div class="card-list-container">
+            <!-- Display Card of Question And Answers Here -->
+                        <div class="card">
+                            <p class="question-div" id="question-div">uli</p>
+                            <a href="#" class="show-hide-btn" id="show-hide-btn">Show/Hide</a>
+                            <p class="answer-div hide" onclick="toggle_visibility('1')">ji</p>
+                            <div class="buttons-con">
+                                <a href="" class="edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <!-- <button class="edit" id="edit" onclick="window.location.href='editFlashcard.php?fcID=".$row['fc_id']."';""><i class="fa-solid fa-pen-to-square"></i></button> -->
+                                <button class="delete" id="delete" onclick="window.location.href='Students.html';"><i class="fa-solid fa-trash-can"></i></button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <p class="question-div" id="question-div">uli</p>
+                            <a href="#" class="show-hide-btn" id="show-hide-btn">Show/Hide</a>
+                            <p class="answer-div hide" onclick="toggle_visibility('1')">ji</p>
+                            <div class="buttons-con">
+                                <a href="" class="edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <!-- <button class="edit" id="edit" onclick="window.location.href='editFlashcard.php?fcID=".$row['fc_id']."';""><i class="fa-solid fa-pen-to-square"></i></button> -->
+                                <button class="delete" id="delete" onclick="window.location.href='Students.html';"><i class="fa-solid fa-trash-can"></i></button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <p class="question-div" id="question-div">uli</p>
+                            <a href="#" class="show-hide-btn" id="show-hide-btn">Show/Hide</a>
+                            <p class="answer-div hide" onclick="toggle_visibility('1')">ji</p>
+                            <div class="buttons-con">
+                                <a href="" class="edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <!-- <button class="edit" id="edit" onclick="window.location.href='editFlashcard.php?fcID=".$row['fc_id']."';""><i class="fa-solid fa-pen-to-square"></i></button> -->
+                                <button class="delete" id="delete" onclick="window.location.href='Students.html';"><i class="fa-solid fa-trash-can"></i></button>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        closeBtn.addEventListener("click", hideQuestion)
+        function hideQuestion () {
+            container.classList.remove("hide");
+            addQuestionCard.classList.add("hide");
+            // if (editBool) {
+            //     editBool = false;
+            //     submitQuestion();
+            // }
+        };
+    </script>
+</body>
+</html>

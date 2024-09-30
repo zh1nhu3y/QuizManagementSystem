@@ -1,0 +1,135 @@
+/* css for admin_panel */
+.infoAdmin {
+    width: 80%;
+    padding: 40px 50px 50px 0;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+}
+.adminMenu {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding: 50px 30px 80px 40px;
+}
+.side-bar {
+    background: #C8C6C6;
+    width: 250px;
+    left: 0px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+header img {
+    width: 100px;
+    margin: 15px;
+    margin-left: 70px;
+}
+header h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    padding-bottom: 13px;
+    letter-spacing: 2px;
+}
+.menu {
+    width: 100%;
+    margin-top: 30px;
+}
+.menu .item {
+    position: relative;
+    cursor: pointer;
+}
+.menu .item a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+.menu .item a:hover {
+    background: whitesmoke;
+}
+.item i {
+    margin-right: 15px;
+}
+.item a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+.item .sub-menu {
+    background: whitesmoke;
+    display: none;
+}
+.menu-btn {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    cursor: pointer;
+    margin: 25px;
+    z-index: 1;
+}
+.side-bar.active {
+    left: 0;
+}
+.side-bar::-webkit-scrollbar {
+    width: 0px;
+}
+.item .sub-menu a{
+    padding-left: 60px;
+}
+.rotate {
+    transform: rotate(90deg);
+}
+.main {
+    height: 300px;
+}
+.main img{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.infoAdmin h1 {
+    font-size: 30px;
+}
+.infoAdmin a{
+    text-decoration: none;
+    color: #A11212;
+}
+.infoAdmin a:hover {
+    color: #896B60;
+}
+.infoAdmin p {
+    font-size: 20px;
+    font-weight: bold;
+}
+input[type=submit], .all-btn{
+    width: 100px;
+    background-color: #896B60;
+    color: white;
+    padding: 3px 0;
+    margin: 5px 5px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+.all-btn {
+    float: right;
+    margin-top: -27px;
+    margin-right: 10px;
+}
+
+input[type=submit]:hover, .all-btn:hover {
+    background-color: #e45050;
+}
